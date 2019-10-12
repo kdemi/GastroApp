@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dataset1" targetNamespace="http://tempuri.org/dataset1.xsd" xmlns:mstns="http://tempuri.org/dataset1.xsd" xmlns="http://tempuri.org/dataset1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dataset1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dataset1" msprop:Generator_UserDSName="dataset1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Employees" msprop:Generator_TableClassName="EmployeesDataTable" msprop:Generator_TableVarName="tableEmployees" msprop:Generator_TablePropName="Employees" msprop:Generator_RowDeletingName="EmployeesRowDeleting" msprop:Generator_RowChangingName="EmployeesRowChanging" msprop:Generator_RowEvHandlerName="EmployeesRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeesRowDeleted" msprop:Generator_UserTableName="Employees" msprop:Generator_RowChangedName="EmployeesRowChanged" msprop:Generator_RowEvArgName="EmployeesRowChangeEvent" msprop:Generator_RowClassName="EmployeesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" type="xs:string" />
+              <xs:element name="percent" msprop:Generator_ColumnVarNameInTable="columnpercent" msprop:Generator_ColumnPropNameInRow="percent" msprop:Generator_ColumnPropNameInTable="percentColumn" msprop:Generator_UserColumnName="percent" type="xs:float" default="5" />
+              <xs:element name="rate" msprop:Generator_ColumnVarNameInTable="columnrate" msprop:Generator_ColumnPropNameInRow="rate" msprop:Generator_ColumnPropNameInTable="rateColumn" msprop:Generator_UserColumnName="rate" type="xs:float" default="8" />
+              <xs:element name="target" msprop:Generator_ColumnVarNameInTable="columntarget" msprop:Generator_ColumnPropNameInRow="target" msprop:Generator_ColumnPropNameInTable="targetColumn" msprop:Generator_UserColumnName="target" type="xs:float" default="1500" />
+              <xs:element name="id_user" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnid_user" msprop:Generator_ColumnPropNameInRow="id_user" msprop:Generator_ColumnPropNameInTable="id_userColumn" msprop:Generator_UserColumnName="id_user" type="xs:int" />
+              <xs:element name="active_inactive" msprop:Generator_ColumnVarNameInTable="columnactive_inactive" msprop:Generator_ColumnPropNameInRow="active_inactive" msprop:Generator_ColumnPropNameInTable="active_inactiveColumn" msprop:Generator_UserColumnName="active_inactive" type="xs:boolean" default="true" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IncomeTab" msprop:Generator_TableClassName="IncomeTabDataTable" msprop:Generator_TableVarName="tableIncomeTab" msprop:Generator_RowChangedName="IncomeTabRowChanged" msprop:Generator_TablePropName="IncomeTab" msprop:Generator_RowDeletingName="IncomeTabRowDeleting" msprop:Generator_RowChangingName="IncomeTabRowChanging" msprop:Generator_RowEvHandlerName="IncomeTabRowChangeEventHandler" msprop:Generator_RowDeletedName="IncomeTabRowDeleted" msprop:Generator_RowClassName="IncomeTabRow" msprop:Generator_UserTableName="IncomeTab" msprop:Generator_RowEvArgName="IncomeTabRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_user" msprop:Generator_ColumnVarNameInTable="columnid_user" msprop:Generator_ColumnPropNameInRow="id_user" msprop:Generator_ColumnPropNameInTable="id_userColumn" msprop:Generator_UserColumnName="id_user" type="xs:int" />
+              <xs:element name="date" msdata:DateTimeMode="Local" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="days_earnings" msprop:Generator_ColumnVarNameInTable="columndays_earnings" msprop:Generator_ColumnPropNameInRow="days_earnings" msprop:Generator_ColumnPropNameInTable="days_earningsColumn" msprop:Generator_UserColumnName="days_earnings" type="xs:float" default="0" />
+              <xs:element name="nrOFhours" msprop:Generator_ColumnVarNameInTable="columnnrOFhours" msprop:Generator_ColumnPropNameInRow="nrOFhours" msprop:Generator_ColumnPropNameInTable="nrOFhoursColumn" msprop:Generator_UserColumnName="nrOFhours" type="xs:float" default="0" />
+              <xs:element name="imprest" msprop:Generator_ColumnVarNameInTable="columnimprest" msprop:Generator_ColumnPropNameInRow="imprest" msprop:Generator_ColumnPropNameInTable="imprestColumn" msprop:Generator_UserColumnName="imprest" type="xs:float" default="0" />
+              <xs:element name="paid" msprop:Generator_ColumnVarNameInTable="columnpaid" msprop:Generator_ColumnPropNameInRow="paid" msprop:Generator_ColumnPropNameInTable="paidColumn" msprop:Generator_UserColumnName="paid" type="xs:boolean" default="false" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:Employees" />
+      <xs:field xpath="mstns:id_user" />
+    </xs:unique>
+    <xs:keyref name="Employees_IncomeTab" refer="Constraint1" msdata:ConstraintOnly="true" msdata:DeleteRule="None">
+      <xs:selector xpath=".//mstns:IncomeTab" />
+      <xs:field xpath="mstns:id_user" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
